@@ -62,8 +62,9 @@ function checkGuess() {
   }
 
   if (attempts === maxNumberOfAttempts) {
-    for (let i = 0; i <= maxNumberOfAttempts.length; i++)
+    for (let i = 0; i <= maxNumberOfAttempts.length; i++) {
       maxNumberOfAttempts[i].style.display = "";
+    }
     submitButton.disabled = true;
     guessInput.disabled = true;
   }
@@ -100,8 +101,10 @@ guessInput.addEventListener("change", (e) => {
     underZero.style.display = "";
     submitButton.disabled = true;
   } else if (e.target.value >= 100) {
-    overHundred.style.display = true;
-  } else submitButton.disabled = false;
+    overHundred.style.display = block;
+  } else {
+    submitButton.disabled = false;
+  }
 });
 
 submitButton.addEventListener("click", checkGuess);
