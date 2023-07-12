@@ -13,3 +13,14 @@ main {
 #reset {
   margin: 20px;
 }
+
+#under-zero, #over-hundred {
+  color: red;
+  font-weight: 600;
+}
+
+#correct {
+  color: green;
+  font-size: larger;
+  font-weight: 600;
+}

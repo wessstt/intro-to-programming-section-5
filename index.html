@@ -15,13 +15,16 @@
         less?
       </p>
       <div>
-        <input type="number" id="guess" min="1" max="99" />
+        <input type="number" name="guess" id="guess" min="1" max="99" />
         <button id="submit">Submit Guess</button>
       </div>
       <div>
         <p class="message" id="number-of-guesses"></p>
         <p class="message" id="too-high">You guessed too high. Try again.</p>
         <p class="message" id="too-low">You guessed too low. Try again.</p>
+        <p class="message" id="under-zero">Try again, number must be greater 0.</p>
+        <p class="message" id="over-hundred">Try again, number must be less than 100.</p>
+        <p class="message" id="not-a-number">Please type a number between 1 to 99</p>
         <p class="message" id="max-guesses">
           You reached the max number of guesses
         </p>
